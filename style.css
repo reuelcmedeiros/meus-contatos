@@ -1,0 +1,61 @@
+.imagem-reuel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #f4f4f4;
+}
+
+img {
+  border-radius: 300px;
+  width: 90px;
+}
+
+.cabecalho-da-lista-de-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.secao-instagram {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 430px;
+  background-color: white;
+  width: 500px;
+  border-radius: 60px;
+  transition: 0.7s;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: black;
+  padding: 30px;
+}
+
+.secao-instagram:hover{
+    transform: scale(1.2);
+}
+
+.secao-whatsapp {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 430px;
+  background-color: white;
+  width: 500px;
+  border-radius: 60px;
+  transition: 0.7s;
+}
+
+.secao-whatsapp:hover{
+    transform: scale(1.2);
+}
