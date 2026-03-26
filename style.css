@@ -59,3 +59,24 @@ a {
 .secao-whatsapp:hover{
     transform: scale(1.2);
 }
+
+@media(max-width:480px){
+     .imagem-reuel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 410px;
+        margin-bottom: 35px;
+        margin-top: 100px;
+     }
+     .cabecalho-da-lista-de-links{
+        margin-left: 120px;
+        width: 600px;
+     }
+     .secao-instagram{
+        margin-left: 160px;
+     }
+     .secao-whatsapp{
+        margin-left: 160px;
+     }
+}
