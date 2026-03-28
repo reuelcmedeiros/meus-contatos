@@ -2,11 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 17px;
 }
 
 body {
   background-color: #1a1a1a;
   color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 img {
@@ -23,10 +28,10 @@ img {
 
 .secao-instagram {
   display: flex;
-  margin: 50px;
+  margin: 30px;
+  margin-bottom: 15px;
   justify-content: center;
   align-items: center;
-  margin-left: 430px;
   background-color: white;
   width: 500px;
   border-radius: 60px;
@@ -49,7 +54,6 @@ a {
   margin-top: 50px;
   justify-content: center;
   align-items: center;
-  margin-left: 430px;
   background-color: white;
   width: 500px;
   border-radius: 60px;
