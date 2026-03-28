@@ -72,13 +72,19 @@ a {
     flex-direction: column;
    }
    .secao-whatsapp{
-    width: 250px;
+    width: 210px;
    }
    .secao-instagram{
-    width: 250px;
+    width: 210px;
    }
 
 .cabecalho-da-lista-de-links{
     width: 250px;
+    font-size: 7px;
+    margin-top: 15px;
+}
+
+img {
+  width: 70px;
 }
 }
