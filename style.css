@@ -71,4 +71,14 @@ a {
     align-items: center;
     flex-direction: column;
    }
+   .secao-whatsapp{
+    width: 250px;
+   }
+   .secao-instagram{
+    width: 250px;
+   }
+
+.cabecalho-da-lista-de-links{
+    width: 250px;
+}
 }
