@@ -5,37 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Contatos de Reuel</title>
     <link rel="stylesheet" href="style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- 🔥 VÍDEO DE FUNDO (NO INÍCIO) -->
     <video autoplay muted loop playsinline id="video-fundo">
         <source src="./images/videoplayback.mp4" type="video/mp4">
     </video>
     
-    <!-- 🖤 OVERLAY ESCURO (ESSENCIAL) -->
     <div class="overlay"></div>
     
-    <!-- Foto de perfil -->
     <div class="imagem-reuel">
-   <img id="foto" src="./images/foto-reuel.jpg" alt="foto-reuel"> 
-   </div>
+        <img src="./images/foto-reuel.jpg" alt="Foto de Reuel" class="foto-perfil"> 
+    </div>
+    
     <div class="cabecalho-da-lista-de-links">
         <h1>Reuel</h1>
     </div>
 
-    <!-- Instagram -->
-    <a href="https://www.instagram.com/reuelcastroo/" class="secao-instagram">
-        <img src="./images/imagem-instagram.jpg.png" alt="Instagram" class="icone">
+    <a href="https://www.instagram.com/reuelcastroo/" class="link-card secao-instagram">
+        <img src="./images/imagem-instagram.png" alt="Instagram" class="icone">
         <span>Instagram</span>
     </a>
 
-   <div class="secao-whatsapp">
-    <img src="./images/whatsapp-imagem.webp" alt="logo-whatsapp">
-    <a href="https://wa.link/56r442">Whatsapp</a>
-   </div>
-   <script src="sc.js"></script>
+    <a href="https://wa.link/56r442" class="link-card secao-whatsapp">
+        <img src="./images/whatsapp-imagem.webp" alt="WhatsApp" class="icone">
+        <span>WhatsApp</span>
+    </a>
+
+    <a href="https://discord.gg/SEU_LINK" class="link-card secao-discord">
+        <img src="./images/icons8-discord-94.png" alt="Discord" class="icone">
+        <span>Discord</span>
+    </a>
 </body>
 </html>
