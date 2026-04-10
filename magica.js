@@ -16,13 +16,25 @@ foto.style.transform="scale(1)";
 nome.style.opacity = "1.0"; 
 txtContato.style.opacity = "1.0";
 })
+// Hamburger Menu
+const hamburgerMenu = document.getElementById('hamburgerMenu');
+const sobreMimModal = document.getElementById('sobreMimModal');
+const fecharModal = document.getElementById('fecharModal');
 
-/////////////////////////////////////////////////////////////////////
+hamburgerMenu.addEventListener('click', () => {
+  hamburgerMenu.classList.toggle('active');
+  sobreMimModal.classList.toggle('active');
+});
 
-//glow nos botoes
-/*
-botoes.addEventListener('mouseenter', function()
-{
+fecharModal.addEventListener('click', () => {
+  hamburgerMenu.classList.remove('active');
+  sobreMimModal.classList.remove('active');
+});
 
-})
-*/
+// Fechar clicando fora
+sobreMimModal.addEventListener('click', (e) => {
+  if (e.target === sobreMimModal) {
+    hamburgerMenu.classList.remove('active');
+    sobreMimModal.classList.remove('active');
+  }
+});
