@@ -1,28 +1,40 @@
 let foto = document.getElementById('foto');
 let nome = document.getElementById('nome');
 let txtContato = document.getElementById('txtContato');
-let clique = 0;
+//let botoes = document.getElementsByClassName('botao');
 
-//script de aumentar foto de perfil
+//foto aumenta ao passar o mouse
 
-foto.addEventListener('click', function(){
-if(clique %2 === 0)
-{
+foto.addEventListener('mouseenter', function(){
+foto.style.transform="scale(2)";
+nome.style.opacity = "0.0"; 
+txtContato.style.opacity = "0.0";
+})
+
+foto.addEventListener('mouseleave', function(){
 foto.style.transform="scale(1)";
 nome.style.opacity = "1.0"; 
 txtContato.style.opacity = "1.0";
-
-clique++;
-}
-else
-{
-foto.style.transform="scale(3)";
-nome.style.opacity = "0.0";
-txtContato.style.opacity = "0.0";
-clique++;
-}
-
-
-
 })
+// Hamburger Menu
+const hamburgerMenu = document.getElementById('hamburgerMenu');
+const sobreMimModal = document.getElementById('sobreMimModal');
+const fecharModal = document.getElementById('fecharModal');
 
+hamburgerMenu.addEventListener('click', () => {
+  hamburgerMenu.classList.toggle('active');
+  sobreMimModal.classList.toggle('active');
+});
+
+fecharModal.addEventListener('click', () => {
+  hamburgerMenu.classList.remove('active');
+  sobreMimModal.classList.remove('active');
+});
+
+// Fechar clicando fora
+sobreMimModal.addEventListener('click', (e) => {
+  if (e.target === sobreMimModal) {
+    hamburgerMenu.classList.remove('active');
+    sobreMimModal.classList.remove('active');
+  }
+});
