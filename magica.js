@@ -1,28 +1,29 @@
 let foto = document.getElementById('foto');
 let nome = document.getElementById('nome');
 let txtContato = document.getElementById('txtContato');
-let clique = 0;
+//let botoes = document.getElementsByClassName('botao');
 
-//script de aumentar foto de perfil
+//foto aumenta ao passar o mouse
 
-foto.addEventListener('click', function(){
+foto.addEventListener('mouseenter', function(){
 if(clique %2 === 0)
-{
+foto.style.transform="scale(3)";
+nome.style.opacity = "0.0"; 
+txtContato.style.opacity = "0.0";
+})
+foto.addEventListener('mouseleave', function(){
+if(clique %2 === 0)
 foto.style.transform="scale(1)";
 nome.style.opacity = "1.0"; 
 txtContato.style.opacity = "1.0";
-
-clique++;
-}
-else
-{
-foto.style.transform="scale(3)";
-nome.style.opacity = "0.0";
-txtContato.style.opacity = "0.0";
-clique++;
-}
-
-
-
 })
 
+/////////////////////////////////////////////////////////////////////
+
+//glow nos botoes
+/*
+botoes.addEventListener('mouseenter', function()
+{
+
+})
+*/
