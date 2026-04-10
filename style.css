@@ -89,6 +89,11 @@ body {
   height: 24px;
 }
 
+#whatsapp {
+   width: 30px;
+   height: auto;
+}
+
 /* Cores */
 .secao-linkedin { background: linear-gradient(45deg, #0077b5, #00a0dc); }
 .secao-instagram { background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af); }
@@ -141,3 +146,15 @@ body {
 }
 
 .tech-item img { width: 25px; margin-bottom: 5px; }
+
+
+.foto-perfil{
+  margin-top: 40px;
+}
+
+
+a{
+   color: white;
+   font-weight: bold;
+   text-decoration: none;
+}
