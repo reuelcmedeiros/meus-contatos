@@ -1,8 +1,21 @@
 let foto = document.getElementById('foto');
 let nome = document.getElementById('nome');
+let clique = 0;
+
 
 foto.addEventListener('click', function(){
+if(clique %2 === 0)
+{
+foto.style.transform="scale(1)";
+nome.style.opacity = "1.0";  
+clique++;
+}
+else
+{
 foto.style.transform="scale(3)";
-nome.style.opacity = "0";
+nome.style.opacity = "0.0";
+clique++;
+}
+
 })
 
