@@ -6,13 +6,12 @@ let txtContato = document.getElementById('txtContato');
 //foto aumenta ao passar o mouse
 
 foto.addEventListener('mouseenter', function(){
-if(clique %2 === 0)
 foto.style.transform="scale(3)";
 nome.style.opacity = "0.0"; 
 txtContato.style.opacity = "0.0";
 })
+
 foto.addEventListener('mouseleave', function(){
-if(clique %2 === 0)
 foto.style.transform="scale(1)";
 nome.style.opacity = "1.0"; 
 txtContato.style.opacity = "1.0";
