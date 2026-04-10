@@ -1,7 +1,7 @@
 let foto = document.getElementById('foto');
 let nome = document.getElementById('nome');
 let txtContato = document.getElementById('txtContato');
-let botoes = document.getElementsByClassName('botao');
+//let botoes = document.getElementsByClassName('botao');
 
 //foto aumenta ao passar o mouse
 
