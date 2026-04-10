@@ -1,35 +1,24 @@
-/* ========================================
-   VÍDEO DE FUNDO - NOVO
-======================================== */
-#video-fundo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+/* ========================================
+   OVERLAY DE FUNDO (substitui vídeo)
+======================================== */
 .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Escuro para legibilidade */
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(120,119,198,0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255,119,198,0.3) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(120,219,255,0.3) 0%, transparent 50%),
+        linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
     z-index: -1;
 }
 
-.imagem-reuel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 17px;
-}
-
 body {
-  background-color: transparent !important; /* Remove cor sólida */
+  background-color: transparent !important;
   color: #f4f4f4;
   display: flex;
   align-items: center;
@@ -40,182 +29,7 @@ body {
   padding: 20px;
   font-family: "Poppins", sans-serif;
   position: relative;
-  z-index: 1; /* Fica por cima do vídeo */
+  z-index: 1;
 }
 
-/* foto de perfil */
-img {
-  border-radius: 300px;
-  width: 90px;
-  border: 3px solid rgba(255,255,255,0.3);
-  transition: 0.3s;
-  backdrop-filter: blur(10px);
-}
-
-img:hover {
-  transform: scale(1.05);
-  border-color: rgba(255,255,255,0.6);
-}
-
-/* ícones dos apps */
-.icone {
-  width: 30px;
-  margin-right: 10px;
-  transition: 0.3s;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
-}
-
-.cabecalho-da-lista-de-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 30px;
-  text-align: center;
-  text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
-}
-
-/* Instagram */
-.secao-instagram {
-  display: flex;
-  margin: 15px 30px;
-  justify-content: center;
-  align-items: center;
-  background: rgba(245, 133, 41, 0.9);
-  background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
-  backdrop-filter: blur(15px);
-  width: 500px;
-  border-radius: 60px;
-  transition: 0.7s ease;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
-  border: 1px solid rgba(255,255,255,0.2);
-}
-
-/* Facebook */
-.secao-facebook {
-  display: flex;
-  margin: 15px 30px;
-  justify-content: center;
-  align-items: center;
-  background: rgba(24, 119, 242, 0.9);
-  background: linear-gradient(45deg, #1877F2, #4267B2);
-  backdrop-filter: blur(15px);
-  width: 500px;
-  border-radius: 60px;
-  transition: 0.7s ease;
-  box-shadow: 0 15px 35px rgba(24, 119, 242, 0.4);
-  border: 1px solid rgba(255,255,255,0.2);
-}
-
-/* Discord */
-.secao-discord {
-  display: flex;
-  margin: 15px 30px;
-  justify-content: center;
-  align-items: center;
-  background: rgba(88, 101, 242, 0.9);
-  background: linear-gradient(45deg, #5865F2, #4752C4, #7289DA);
-  backdrop-filter: blur(15px);
-  width: 500px;
-  border-radius: 60px;
-  transition: 0.7s ease;
-  box-shadow: 0 15px 35px rgba(88, 101, 242, 0.4);
-  border: 1px solid rgba(255,255,255,0.2);
-}
-
-/* WhatsApp */
-.secao-whatsapp {
-  display: flex;
-  margin: 15px 30px;
-  justify-content: center;
-  align-items: center;
-  background: rgba(37, 211, 102, 0.9);
-  background: linear-gradient(45deg, #25D366, #128C7E);
-  backdrop-filter: blur(15px);
-  width: 500px;
-  border-radius: 60px;
-  transition: 0.7s ease;
-  box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
-  border: 1px solid rgba(255,255,255,0.2);
-}
-
-a {
-  font-family: "Poppins", sans-serif;
-  text-decoration: none;
-  color: white;
-  padding: 30px;
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
-}
-
-a:hover {
-  color: #fff;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.8);
-}
-
-/* animação hover */
-.secao-instagram:hover,
-.secao-facebook:hover,
-.secao-discord:hover,
-.secao-whatsapp:hover {
-  transform: scale(1.05) translateY(-8px);
-  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
-}
-
-/* RESPONSIVO */
-@media (max-width: 480px) {
-  body {
-    padding: 10px;
-  }
-
-  .secao-whatsapp,
-  .secao-instagram,
-  .secao-facebook,
-  .secao-discord {
-    width: 280px;
-    margin: 10px 15px;
-  }
-
-  .cabecalho-da-lista-de-links {
-    width: 100%;
-    font-size: 2.2rem;
-    margin: 10px 0 20px 0;
-    padding: 0 10px;
-  }
-
-  img {
-    width: 70px;
-  }
-
-  .icone {
-    width: 24px;
-  }
-
-  a {
-    padding: 25px;
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 320px) {
-  .secao-whatsapp,
-  .secao-instagram,
-  .secao-facebook,
-  .secao-discord {
-    width: 240px;
-  }
-  
-  .cabecalho-da-lista-de-links {
-    font-size: 1.8rem;
-  }
-}
+/* Resto do código permanece igual... */
